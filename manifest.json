@@ -3,7 +3,7 @@
   "name": "Hipster Block",
   "short_name": "HipsterBlock",
   "description": "Avoid mainstream (1M+ views) videos on youtube",
-  "version": "0.1",
+  "version": "0.2",
   "background": {
     "scripts": ["background.js"]
   },
@@ -11,8 +11,9 @@
     "default_icon": "mustache128.png"
   },
   "permissions": [
-    "tabs", "https://www.youtube.com/*"
+    "tabs", "https://www.youtube.com/*", "storage"
   ],
+  "options_page": "options.html",
   "icons": {
     "48": "mustache48.png",
     "128": "mustache128.png"
