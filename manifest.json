@@ -3,7 +3,7 @@
   "name": "Hipster Block",
   "short_name": "HipsterBlock",
   "description": "Avoid mainstream (1M+ views) videos on youtube",
-  "version": "0.2",
+  "version": "0.3",
   "background": {
     "scripts": ["background.js"]
   },

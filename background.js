@@ -35,7 +35,7 @@ function BlockMainstream(tab) {
   // waiting 10 sec to give user time
   if (blocky && tab.url.indexOf('https://www.youtube.com/') == 0 && tab.url.length > 24) {
     chrome.tabs.executeScript(tab.id, {
-      code: "document.getElementsByClassName(\"watch-view-count\")[0].innerHTML"
+      code: "document.getElementsByClassName(\"view-count\")[0].innerHTML"
     }, function (result) {
       if (!result || !result[0] || ParseViews(result[0]) == views) {
         retry = setTimeout(function() {
